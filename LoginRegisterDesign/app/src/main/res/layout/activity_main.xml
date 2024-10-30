@@ -44,8 +44,7 @@
             android:textSize="14sp"
             android:textColor="#252525"
             android:layout_marginTop="-5dp"
-            android:gravity="center"
-    />
+            android:gravity="center" />
 
     <EditText
             android:id="@+id/email"
@@ -62,8 +61,7 @@
             android:padding="12dp"
             android:textColor="#000000"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-    />
+            app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
             android:id="@+id/password"
@@ -80,8 +78,7 @@
             android:padding="12dp"
             android:textColor="#000000"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-    />
+            app:layout_constraintEnd_toEndOf="parent" />
 
     <CheckBox
             android:id="@+id/remember_me"
@@ -92,8 +89,7 @@
             app:layout_constraintTop_toBottomOf="@+id/password"
             app:layout_constraintStart_toStartOf="@+id/password"
             android:layout_marginTop="5dp"
-            android:textSize="12sp"
-    />
+            android:textSize="12sp" />
 
     <TextView
             android:id="@+id/forgot_password"
@@ -119,8 +115,7 @@
             app:layout_constraintBottom_toBottomOf="@id/register_layout"
             android:layout_marginBottom="23dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-    />
+            app:layout_constraintEnd_toEndOf="parent" />
 
     <LinearLayout
             android:id="@+id/register_layout"
