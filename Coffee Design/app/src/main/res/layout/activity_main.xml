@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black"
+    >
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/coffee_photo"
+            android:scaleType="fitXY"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/primaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="320dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/primary_text"
+            app:layout_constraintBottom_toTopOf="@+id/secondaryText"
+            android:layout_marginBottom="8dp"
+            android:layout_marginHorizontal="24dp"
+            android:textSize="32sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+    />
+
+    <TextView
+            android:id="@+id/secondaryText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/getStartedButton"
+            android:text="@string/secondary_text"
+            android:layout_marginBottom="20dp"
+            android:layout_marginHorizontal="24dp"
+            android:textColor="#A2A2A2"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="center"
+    />
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/getStartedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="54dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="54dp"
+            android:layout_marginHorizontal="24dp"
+            android:text="@string/get_started"
+            android:textSize="16sp"
+            android:backgroundTint="#C67C4E"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
